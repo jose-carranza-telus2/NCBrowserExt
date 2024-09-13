@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Get NC Attribute ID",
+    "version": "1.0",
+    "description": "Get the NC Attribute ID from a given attribute",
+    "permissions": [
+      "contextMenus",
+      "activeTab",
+      "clipboardWrite"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content_script.js"]
+      }
+    ],
+    "icons": {
+      "48": "border-48.png"
+    }
+  }
+  
